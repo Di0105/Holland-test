@@ -1,0 +1,8 @@
+check,item,value,interpretation
+source_track,MaxWind_unit,kt,"MaxWind is nautical miles per hour / knots, not km/h."
+conversion,kt_to_mps,0.514444,"Correct conversion used by Holland scripts: vmax_ms = MaxWind * 0.514444."
+wrong_conversion,kmh_to_mps,0.2777777778,"This km/h conversion factor is not used."
+output_audit,holland_inputs_vmax_ms_over_maxwind_min,0.514444,"PASS: generated holland_inputs.csv uses kt -> m/s."
+output_audit,holland_inputs_vmax_ms_over_maxwind_avg,0.514444,"PASS: generated holland_inputs.csv uses kt -> m/s."
+output_audit,holland_inputs_vmax_ms_over_maxwind_max,0.514444,"PASS: generated holland_inputs.csv uses kt -> m/s."
+impact,numerical_outputs,unchanged,"No numerical correction is needed because the existing Holland pipeline already treated MaxWind as kt."

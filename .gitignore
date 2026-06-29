@@ -1,0 +1,26 @@
+# Dependencies & outputs to ignore
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Data files (too large for repo)
+*.zip
+*.csv
+!outputs/wind_unit_audit.csv
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python virtual env
+venv/
+env/
+.venv/
